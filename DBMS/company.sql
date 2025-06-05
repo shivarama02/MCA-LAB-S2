@@ -137,7 +137,7 @@ select * from locations;
 select * from regions;
 
 
-select country_name from counties;
+select country_name as Countries from counties;
 select email,phone_number from employee;
 select * from employee where last_name = "fay";
 select hire_date from employee where last_name in ("Grant","Whalen");
