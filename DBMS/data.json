@@ -1,0 +1,62 @@
+[
+  {
+    "_id": 1,
+    "name": {"fname": "Anjali", "lname": "Menon"},
+    "gender": "female",
+    "course": "MCA",
+    "mark": 92,
+    "grade": "A+",
+    "phone": {"no": "9876543210"},
+    "address": {"city": "Kollam"}
+  },
+  {
+    "_id": 2,
+    "name": {"fname": "Vishnu", "lname": "Raj"},
+    "gender": "male",
+    "course": "Mechanical",
+    "mark": 95,
+    "grade": "A+",
+    "phone": {"no": "9876501234"},
+    "address": {"city": "Thiruvananthapuram"}
+  },
+  {
+    "_id": 3,
+    "name": {"fname": "Meera", "lname": "Das"},
+    "gender": "female",
+    "course": "MCA",
+    "mark": 88,
+    "grade": "A",
+    "phone": {"no": "9876512345"},
+    "address": {"city": "Kollam"}
+  },
+  {
+    "_id": 4,
+    "name": {"fname": "Rahul", "lname": "Nair"},
+    "gender": "male",
+    "course": "MCA",
+    "mark": 91,
+    "grade": "A+",
+    "phone": {"no": "9876523456"},
+    "address": {"city": "Alappuzha"}
+  },
+  {
+    "_id": 5,
+    "name": {"fname": "Varun", "lname": "Krishnan"},
+    "gender": "male",
+    "course": "Mechanical",
+    "mark": 89,
+    "grade": "A",
+    "phone": {"no": "9876534567"},
+    "address": {"city": "Kollam"}
+  },
+  {
+    "_id": 6,
+    "name": {"fname": "Divya", "lname": "Pillai"},
+    "gender": "female",
+    "course": "Mechanical",
+    "mark": 94,
+    "grade": "A+",
+    "phone": {"no": "9876545678"},
+    "address": {"city": "Thiruvananthapuram"}
+  }
+]
