@@ -1,37 +1,59 @@
 import java.util.*;
 public class employee {
     Scanner sc = new Scanner(System.in);
-    int eno;
-    String ename;
-    double esalary;
-    employee(){
-        System.out.println("Enter details of employee");
-        System.out.print("Enter employee number: ");
-        eno = sc.nextInt();
+    int empid;
+    String name, address;
+    double salary;
+    employee(int x){
+        System.out.println("Enter Details of teacher "+x);
+        System.out.print("Enter employee id: ");
+        empid = sc.nextInt();
         System.out.print("Enter employee name: ");
-        ename = sc.next();
+        name = sc.next();
+        System.out.print("Enter employee address: ");
+        address = sc.next();
         System.out.print("Enter employee salary: ");
-        esalary = sc.nextDouble();
+        salary = sc.nextDouble();
+    }
+}
+class teacher extends employee{
+    Scanner sc = new Scanner(System.in);
+    String dept, subject[];
+    int n;
+    teacher(int x){
+        super(x);
+        System.out.print("Enter department: ");
+        dept = sc.next();
+        System.out.print("Enter no. of subjects: ");
+        n = sc.nextInt();
+        subject = new String[n];
+        System.out.print("Enter subjects: ");
+        for(int i=0; i<n; i++){
+            subject[i] = sc.next();
+        }
+    }
+    void display(int x){
+        System.out.println("Teacher "+x+"Details");
+        System.out.println("Employee ID: "+empid);
+        System.out.println("Employee name: "+name);
+        System.out.println("Employee address: "+address);
+        System.out.println("Employee salary: "+salary);
+        System.out.println("Department: "+dept);
+        System.out.println("Subjects: ");
+        for(int i=0; i<n; i++){
+            System.out.println(subject[i]+", ");
+        }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number of employees to be register: ");
+        System.out.print("Enter number of techers: ");
         int n = sc.nextInt();
-        employee e[] = new employee[n];
+        teacher t[] = new teacher[n];
         for(int i=0; i<n; i++){
-            e[i] =  new employee();
+            t[i] = new teacher(i+1);
         }
-        int c=0;
-        System.out.print("\nEnter employee number to search: ");
-        int num = sc.nextInt();
         for(int i=0; i<n; i++){
-            if(e[i].eno == num){
-                System.out.println("Employee Name: "+e[i].ename+"\nsalary: "+e[i].esalary);
-                c=1;
-            }
-        }
-        if(c==0){
-            System.out.println("Employee not registered");
+            t[i].display(i+1);
         }
     }
 }
